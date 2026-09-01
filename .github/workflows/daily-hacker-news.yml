@@ -33,6 +33,7 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GHOST_NAME: ${{ vars.GHOST_NAME || 'daily-research' }}
       HN_LOOKBACK: ${{ inputs.hn_lookback || 'today' }}
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout repository
